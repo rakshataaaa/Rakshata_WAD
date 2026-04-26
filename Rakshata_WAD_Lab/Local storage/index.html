@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="stytelab1.css">
+    <title>Student Form</title>
+</head>
+<body>
+<form onsubmit="return false;">
+    <h2>STUDENT INFO</h2>
+
+    <label>Name</label>
+    <input type="text" id="name"><br><br>
+
+    <label>Roll No</label>
+    <input type="text" id="rollno"><br><br>
+
+    <label>Class</label>
+    <input type="text" id="class"><br><br>
+
+    <label>Gender</label>
+    <input type="radio" value="M" name="gender"> Male
+    <input type="radio" value="F" name="gender"> Female
+    <br><br>
+
+    <button onclick="addStudent()">Add</button>
+    <button onclick="updateStudent()">Update</button>
+</form>
+
+<h3>Student List</h3>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Roll</th>
+            <th>Class</th>
+            <th>Gender</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+</body>
+</html>
